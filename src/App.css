@@ -1,0 +1,62 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+body .interface {
+  background-color: rgb(21 21 21);
+  border-radius: 20px;
+  box-shadow: 5px 10px black;
+}
+
+
+#light .btnszamolas {
+  background-color: rgb(168 190 201);
+}
+
+#light .btnujra {
+  background-color: rgb(168 190 201);
+}
+
+#light .interface {
+  background-color: rgb(255, 255, 255);
+  color: rgb(21 21 21);
+  border-radius: 20px;
+  box-shadow: 5px 10px rgb(204, 204, 204);
+
+}
+
+
+
+.App {
+  border-radius: 20px;
+}
+
+#light input {
+  background-color: rgb(240, 248, 255);
+  border-radius: 5px;
+  color: rgb(21 21 21);
+}
+
+.sun {
+  height: 50px;
+  width: 50px;
+  margin-top: 30px;
+}
+
+.here {
+  width: 1000px;
+}
+
+#light {
+  background-color: #fff;
+}

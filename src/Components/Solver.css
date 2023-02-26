@@ -1,0 +1,54 @@
+.interface {
+    background-color: rgb(21 21 21);
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.egyutthatok {
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    font-size: 24px;
+}
+
+.kerem {
+    font-size: 24px;
+}
+
+label {
+    font-size: 24px;
+}
+
+input {
+    height: 20px;
+    border-radius: 5px;
+}
+
+.buttons {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.btnszamolas {
+    margin-left: 60px;
+    background-color: rgb(139, 139, 139);
+    color: rgb(21 21 21);
+}
+
+.btnujra {
+    margin-left: 60px;
+    background-color: rgb(139, 139, 139);
+    color: rgb(21 21 21);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
