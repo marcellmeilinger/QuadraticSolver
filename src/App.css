@@ -15,27 +15,43 @@ body {
 body .interface {
   background-color: rgb(21 21 21);
   border-radius: 20px;
-  box-shadow: 5px 10px black;
+  box-shadow: 0 0 50px white;
 }
 
 
 #light .btnszamolas {
   background-color: rgb(168 190 201);
+  animation-name: color-transition-tolightBTN;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
 
 #light .btnujra {
   background-color: rgb(168 190 201);
+  animation-name: color-transition-tolightBTN;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
 
 #light .interface {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(21 21 21);
   color: rgb(21 21 21);
   border-radius: 20px;
-  box-shadow: 5px 10px rgb(204, 204, 204);
-
+  box-shadow: 0 0 50px rgb(204, 204, 204);
+  animation-name: color-transition-tolight;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
 
-
+#dark .interface {
+  background-color: rgb(21 21 21);
+  color: rgb(21 21 21);
+  border-radius: 20px;
+  box-shadow: 0 0 50px rgb(204, 204, 204);
+  animation-name: color-transition-todark;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
 
 .App {
   border-radius: 20px;
@@ -45,6 +61,18 @@ body .interface {
   background-color: rgb(240, 248, 255);
   border-radius: 5px;
   color: rgb(21 21 21);
+  animation-name: color-transition-tolightINPUT;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+#dark input {
+  background-color: rgb(240, 248, 255);
+  border-radius: 5px;
+  color: rgb(21 21 21);
+  animation-name: color-transition-todarkINPUT;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
 
 .sun {
@@ -59,4 +87,118 @@ body .interface {
 
 #light {
   background-color: #fff;
+}
+
+.container {
+  display: grid;
+}
+
+.bodylight {
+  background-color: rgb(240 248 255);
+  animation-name: color-transition-tolightBODY;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+.darkbody {
+  background-color: rgb(36 36 36);
+}
+
+.bodydark {
+  background-color: rgb(36 36 36);
+  animation-name: color-transition-todarkBODY;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes color-transition-tolight {
+  0% {
+    background-color: rgb(21 21 21);
+    color: #fff;
+    /* starting background color */
+  }
+
+  100% {
+    background-color: rgb(255, 255, 255);
+    color: rgb(21 21 21);
+    /* ending background color */
+  }
+}
+
+@keyframes color-transition-todark {
+  0% {
+    background-color: rgb(255, 255, 255);
+    color: rgb(21 21 21);
+    /* starting background color */
+  }
+
+  100% {
+    background-color: rgb(21 21 21);
+    color: #fff;
+    /* ending background color */
+  }
+}
+
+@keyframes color-transition-tolightBODY {
+  0% {
+    background-color: rgb(36 36 36);
+    /* starting background color */
+  }
+
+  100% {
+    background-color: rgb(240 248 255);
+    /* ending background color */
+  }
+}
+
+@keyframes color-transition-todarkBODY {
+  0% {
+    background-color: rgb(240 248 255);
+    /* starting background color */
+  }
+
+  100% {
+    background-color: rgb(36 36 36);
+    /* ending background color */
+  }
+}
+
+@keyframes color-transition-tolightBTN {
+  0% {
+    background-color: rgb(139, 139, 139);
+    /* starting background color */
+  }
+
+  100% {
+    background-color: rgb(168 190 201);
+    /* ending background color */
+  }
+}
+
+@keyframes color-transition-tolightINPUT {
+  0% {
+    background-color: rgb(59 59 59);
+    color: white;
+    /* starting background color */
+  }
+
+  100% {
+    background-color: rgb(240, 248, 255);
+    color: black;
+    /* ending background color */
+  }
+}
+
+@keyframes color-transition-todarkINPUT {
+  0% {
+    background-color: rgb(240, 248, 255);
+    color: black;
+    /* starting background color */
+  }
+
+  100% {
+    background-color: rgb(59 59 59);
+    color: white;
+    /* ending background color */
+  }
 }

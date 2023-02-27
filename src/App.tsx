@@ -8,32 +8,34 @@ export const ThemeContext = createContext(null);
 
 let iconSrc = "icons8-sun.svg"
 function App() {
-  const [theme, setTheme] = useState("dark");
-
+  const [theme, setTheme] = useState("");
   function toggleTheme() {
-    if (theme === "dark") {
+    if (theme === "dark" || theme === "") {
       setTheme("light");
-      document.body.style.backgroundColor = "rgb(240 248 255)";
+      document.body.classList.remove('bodydark')
+      document.body.classList.add('bodylight');
       iconSrc = "dark-mode-6682.svg";
     }
     else {
       setTheme("dark");
-      document.body.style.backgroundColor = "rgb(36 36 36)";
+      document.body.classList.remove('bodylight')
+      document.body.classList.add('bodydark');
       iconSrc = "icons8-sun.svg"
     }
 
   };
 
   return (
-
-    <ThemeContext.Provider value={null} >
-      <div className='App' id={theme}>
-        <Solver />
-      </div>
-      <div>
-        <img id='icon' className='sun' onClick={toggleTheme} src={iconSrc} alt="" />
-      </div>
-    </ThemeContext.Provider>
+    <section className='container'>
+      <ThemeContext.Provider value={null} >
+        <div className='App' id={theme}>
+          <Solver />
+        </div>
+        <div>
+          <img id='icon' className='sun' onClick={toggleTheme} src={iconSrc} alt="" />
+        </div>
+      </ThemeContext.Provider>
+    </section>
   )
 }
 
