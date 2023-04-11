@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
-import "./Solver.css"
+import "./SolverGlass.css"
 
-export const Solver = () => {
-    document.body.classList.remove('bodyglass')
-    document.body.style.backgroundColor = "rgb(21 21 21)";
+export const SolverGlass = () => {
+    document.body.classList.add('bodyglass');
 
     const [A, setA] = useState("");
     const [B, setB] = useState("");

@@ -12,13 +12,6 @@ body {
   justify-content: flex-start;
 }
 
-body .interface {
-  background-color: rgb(21 21 21);
-  border-radius: 20px;
-  box-shadow: 0 0 50px white;
-}
-
-
 #light .btnszamolas {
   background-color: rgb(168 190 201);
   animation-name: color-transition-tolightBTN;
@@ -102,6 +95,10 @@ body .interface {
 
 .darkbody {
   background-color: rgb(36 36 36);
+}
+
+.bodyglass {
+  background-image: url(colorful.png);
 }
 
 .bodydark {
